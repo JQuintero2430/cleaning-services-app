@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+    background-image: url('/resources/img/pexels-polina-tankilevitch-4440525.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+input::placeholder {
+    color: #555; /* Color más oscuro para el placeholder */
+    opacity: 1; /* Asegura que el color se aplique correctamente */
+}

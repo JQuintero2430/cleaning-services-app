@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: J. Quintero. Landing page Cleaning Services">
     <title>@yield('title','Cleaning Services')</title>
     @vite('resources/css/app.css')
 </head>
@@ -12,7 +13,10 @@
     @include('layouts.navbar')
     {{-- end navbar --}}
     </header>
-    <main class="flex-grow container mx-auto px-4 py-8">
+    <main class="flex-grow">
+    <div class="text-center">
+            <h1 class="text-3xl font-bold text-center text-slate-300">@yield('cabecera','Cleaning Services')</h1>
+        </div>
     @yield('content')
     </main>
 

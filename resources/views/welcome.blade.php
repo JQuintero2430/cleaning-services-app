@@ -1,23 +1,22 @@
- @extends('layouts.app')
+@extends('layouts.app')
 
-  @section('title', 'Productos')
+@section('title', 'Cleaning Services Home')
 
-    @section('content')
-    <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-4">Productos</h1>
-    <p class="text-lg mb-6">En esta sección encontrarás los productos que tenemos disponibles</p>
-
-    <ul class="space-y-4">
-        @foreach($products as $product)
-            <li class="p-4 bg-gray-100 rounded shadow-md">
-                <span class="font-semibold">{{ $product->name }}</span> - 
-                <span>Precio: ${{ $product->price }}</span> - 
-                <span>Stock: {{ $product->stock }}</span>
-            </li>
-        @endforeach
-    </ul>
+@section('content')
+<div class="hero min-h-screen">
+    <div class="hero-overlay bg-opacity-40"></div>
+    <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold" style="color:azure">Bienvenido a Cleaning Services</h1>
+            <p class="mb-5" style="color:azure">
+                Bienvenido a nuestro sitio web de servicios de limpieza. Si deseas conocer todos nuestro productos te invitamos a que hacer clic en el boton de abajo.
+            </p>
+            <a href="/products" class="btn btn-primary">Empecemos con el Viaje</a>
+        </div>
+    </div>
 </div>
-    @endsection
-    @section('scripts')
-    <script src="{{ mix('resources/js/dropdown.js') }}"></script>
-    @endsection
+@endsection
+
+@section('scripts')
+<script src="{{ mix('resources/js/dropdown.js') }}"></script>
+@endsection

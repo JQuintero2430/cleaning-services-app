@@ -13,7 +13,7 @@
 
     <!-- Search Form -->
     <form action="/search" method="get" class="flex items-center">
-        <input type="text" placeholder="Buscar..." name="q" class="px-4 py-2 rounded-l bg-gray-200 focus:outline-none focus:bg-white" />
+        <input type="text" placeholder="Buscar..." name="q" class="px-4 py-2 rounded-l bg-white focus:outline-none focus:bg-white" />
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600">Buscar</button>
     </form>
 
